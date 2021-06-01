@@ -80,10 +80,12 @@ function Tabs() {
     Animated.timing(flyAnim, {
       toValue: scrollItemShadowDiffLeft,
       duration: 0,
+      useNativeDriver: false,
     }).start();
     Animated.timing(widAnim, {
       toValue: scrollItemShadowDiffWidth,
       duration: 0,
+      useNativeDriver: false,
     }).start();
   };
   return (
